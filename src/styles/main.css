@@ -1,0 +1,197 @@
+@import './base.css';
+
+html {
+  --base-color: black;
+
+  font-family: sans-serif;
+}
+
+.container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.home {
+  padding-bottom: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+.header__brand {
+  font-size: 24px;
+  font-family: sans-serif;
+  color: var(--base-color);
+  text-decoration: none;
+}
+
+.header__brand:hover {
+  text-decoration: underline;
+}
+
+.rooms {
+  list-style-type: none;
+}
+
+.rooms__item {
+  margin-bottom: 20px;
+}
+
+.rooms__link {
+  color: unset;
+  text-decoration: none;
+}
+
+.room {
+  display: grid;
+  grid-template-columns: repeat(1fr, 2);
+  grid-template-rows: repeat(1fr, 2);
+  border: 1px solid var(--base-color);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.room:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.room__name {
+  grid-column: 1 / 1;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.room__hostname {
+  grid-column: 1 / 1;
+  font-size: 14px;
+}
+
+.room__note {
+  margin-top: 10px;
+}
+
+.room__booking-date {
+  grid-row: 1 / 3;
+  grid-column: 2 / 2;
+  align-self: center;
+  justify-self: end;
+}
+
+.pagination {
+  margin-bottom: 20px;
+}
+
+.pagination,
+.pagination__rows-count,
+.pagination__pager {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination__rows-count {}
+
+.pagination__text {}
+
+.pagination__select {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pagination__option {}
+
+.pagination__pager {}
+
+.pagination__pager-prev,
+.pagination__num,
+.pagination__pager-next {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.pagination__num.active {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.pagination__pages-num {
+  margin: 0 10px;
+}
+
+.pagination__num:nth-child(2) {
+  margin: 0 5px;
+}
+
+.room__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.room__header-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.room__input-name {
+  letter-spacing: -0.05em;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  background: none;
+  border: none;
+}
+
+.room__input-hostname {
+  font-size: 18px;
+  background: none;
+  border: none;
+}
+
+.room__add,
+.room__cancel {
+  margin-right: 10px;
+}
+
+.room__edit {}
+
+.room__btn {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.room__form {}
+
+.room__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.room__label > span {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.room__input-date:first-child {
+  margin-right: 10px;
+}
+
+.room__input {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.room__save {}
